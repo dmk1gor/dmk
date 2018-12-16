@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> 7. JavaScript Functions</title>
+  <script type="text/javascript">
+  /*
+  function myNewFunction(){
+  alert("MONEY!!!")
+  }
+  */
+ // Calling Function Invocation with () ---  myNewFunction();
+ 
+ /*
+ // Function with Parameters
+ function myNewFunction(myValue) {
+   alert("MONEY, " + myValue);
+ }
+ 
+ */
+ /*
+ // function is 'add' 
+ function add(firstNumber, secondNumber) {
+   return firstNumber + secondNumber; }
+   
+   
+ var myResult = add(100, 2000);
+ alert("Result  :  " + myResult);
+ 
+ */
+ 
+ // call function with a parameter
+ // myNewFunction("Ahora...");
+ 
+ 
+ // Function addALL  
+  
+ // The Adding part is done BY tempValue += arguments[i];
+ //  [ ARGUMENTS  ] is built in funtion for  Java Script 
+ /*function addALL() {
+ var tempValue = 0;
+ for (i = 0; i < arguments.length; i++)
+			{
+			  tempValue += arguments[i];
+			}
+	 return tempValue;
+	 }
+	var myValue = addALL(2,3,5,11,22);
+	alert("The add ALL Function result : " + myValue);
+	
+ */
+	
+ // example below defines Function() and assigns it to a var
+ // the var becomes a Function Object used in application **
+ /*
+ var addMe = function() {
+     return arguments[0] + arguments[1]; }
+	 
+var myNewValue = addMe(100,300);
+alert(myNewValue);	 
+****/
+/***	 
+ // Below is an Anonymous Function defined and assigned to var 
+ // the var becomes a function object 
+ // the parameters are passed at End of Function 
+ // result is 6
+ var myResult = (function () {
+	return arguments[0] + arguments[1];
+ })(2,4);
+  alert ( " Anoynmous Function Result is : " + myResult );  ***/
+  
+  
+ ////////////////////////////////////////////////////////////
+ // OR same Anoymous Function defined in an Alert line
+  alert ( "Anoymous Function defined in Alert and passed values : " +(function() {
+    return arguments[0] + arguments[1]; }) (1,9));
+ 
+ 
+ 
+  </script>
+ 
+ 
+</head>
+<body>
+  <h1>JavaScript Functions</h1>
+
+<!--  <input type="submit" value ="Click me" onclick="myNewFunction();"/> -->
+
+</body>
+</html>

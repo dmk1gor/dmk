@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>10. Global Scope versus Function Scope</title>
+  <script type="text/javascript">
+
+//  Normally a variable declared inside a block [ i.e. IF
+// is NOT available outside EXCEPT Java Script is ***
+/*
+if (true) {
+  var x = 5;
+}
+alert(x);   
+*/
+
+
+// GLOBAL variable is NOT declared *** Just Assign it a value
+ myScope = "Global set OUTSIDE ";  // GLOBAL Declaration here ---
+
+ 
+ /*
+(function() {
+//  myScope = "I set this inside the function";
+
+if (true)
+{
+ var myScope = "INSIDE IF block  the var variable declared  "; // Not seen outside
+} 
+
+ alert('INSIDE the function, the scope is: ' + myScope); 
+  })();
+
+// alert('OUTSIDE  the function, the scope is: ' + myScope);
+
+*/
+
+
+alert('window.myScope: ' + window.myScope);
+
+
+
+  </script>
+</head>
+<body>
+  <h1>10. Global Scope versus Function Scope</h1>
+</body>
+</html>
